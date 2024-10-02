@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Recommendations</title>
+    <title>PeliFan</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Movie Recommendations</h1>
+        <h1>PeliFan</h1>
+        <h2>Movie recommendations</h2>
         <div class="genre-selector">
             <label for="genre-select">Select a genre:</label>
-            <select id="genre-select">
-                <option value="">Choose a genre</option>
-                <option value="action">Action</option>
-                <option value="comedy">Comedy</option>
-                <option value="drama">Drama</option>
-                <option value="horror">Horror</option>
-            </select>
-        </div>
-        <button id="get-recommendations">Get Recommendations</button>
+            <div class="custom-select">
+                <select id="genre-select">
+                    <option value="">Choose a genre</option>
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="horror">Horror</option>
+                </select>
+            </div>
+        </div>        
+        <button id="get-recommendations">Get recommendations</button>
         <div id="movie-list"></div>
     </div>
+    <script src="MovieDataSingleton.js"></script>
+    <script src="MovieRecommendationFactory.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
